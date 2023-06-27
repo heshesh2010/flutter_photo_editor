@@ -28,8 +28,8 @@ public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
       }
 
       ZLImageEditorConfiguration.default()
-    .editImageTools([.draw .clip,.textSticker])
- 
+    .editImageTools([.draw])
+    .adjustTools([.brightness, .contrast, .saturation])
 
       ZLEditImageViewController.showEditImageVC(
         parentVC: UIApplication.shared.keyWindow?.rootViewController,

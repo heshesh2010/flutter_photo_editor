@@ -12,7 +12,7 @@ A new Flutter project.
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :git => 'https://github.com/heshesh2010/ZLImageEditor.git', :tag => 'v1.0.0' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.dependency 'ZLImageEditor'

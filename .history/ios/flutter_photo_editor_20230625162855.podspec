@@ -15,7 +15,7 @@ A new Flutter project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'ZLImageEditor'
+  s.dependency 'heshesh2010-heshamzlimageeditor'
 
   s.platform = :ios, '9.0'
 
