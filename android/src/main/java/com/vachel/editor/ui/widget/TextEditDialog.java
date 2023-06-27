@@ -58,7 +58,7 @@ public class TextEditDialog extends Dialog implements View.OnClickListener,
         tvDone.setOnClickListener(this);
         GradientDrawable gd = new GradientDrawable();
         gd.setColor(PictureEditor.getInstance().getBtnColor(getContext()));
-        gd.setCornerRadius(Utils.dip2px(getContext(), 4));
+        gd.setCornerRadius(Utils.dip2px(getContext(), 15));
         tvDone.setBackground(gd);
         mEnableDrawBg.setOnClickListener(this);
 

@@ -125,7 +125,7 @@ public class PictureEditActivity extends AppCompatActivity implements View.OnCli
         TextView tvDone = findViewById(R.id.tv_done);
         GradientDrawable gd = new GradientDrawable();
         gd.setColor(PictureEditor.getInstance().getBtnColor(this));
-        gd.setCornerRadius(Utils.dip2px(this, 4));
+        gd.setCornerRadius(Utils.dip2px(this, 15));
         tvDone.setBackground(gd);
         TextView clipDone = findViewById(R.id.ib_clip_done);
         clipDone.setBackground(gd);
