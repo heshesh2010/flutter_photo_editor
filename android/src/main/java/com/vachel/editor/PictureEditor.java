@@ -164,13 +164,14 @@ public class PictureEditor {
         return globalStickerRectRender;
     }
 
+    
     public @ColorInt int getBtnColor(Context context) {
         if (btnColor == 0) {
             return context.getResources().getColor(R.color.image_color_accent);
         }
         return btnColor;
     }
-
+    
     public int[] getDoodleColors(Context context) {
         if (doodleColors == null) {
             Resources resources = context.getResources();

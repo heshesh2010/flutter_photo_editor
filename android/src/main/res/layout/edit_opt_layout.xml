@@ -8,7 +8,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_top"
+        android:background="#000"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="12dp">
 
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/bg_bottom"
+        android:background="#000"
         android:paddingHorizontal="16dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
