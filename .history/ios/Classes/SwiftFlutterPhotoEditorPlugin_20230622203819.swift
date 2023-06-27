@@ -21,6 +21,7 @@ public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
       }
       
   }
+    
     private func editImage(path: Any?, result: @escaping FlutterResult) {
       guard let path = path as? String, let image = UIImage(contentsOfFile: path) else {
         result(FlutterError(code: "1", message: "image not found", details: nil))
@@ -28,8 +29,8 @@ public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
       }
 
       ZLImageEditorConfiguration.default()
-    .editImageTools([.draw .clip,.textSticker])
- 
+    .editImageTools([.draw])
+    .adjustTools([.brightness, .contrast, .saturation])
 
       ZLEditImageViewController.showEditImageVC(
         parentVC: UIApplication.shared.keyWindow?.rootViewController,

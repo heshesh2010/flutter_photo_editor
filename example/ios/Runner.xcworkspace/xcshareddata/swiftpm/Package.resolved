@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "heshamzlimageeditor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heshesh2010/HeshamZLImageEditor",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2c0df4d7ec0ab5b026513d8a78632b010d662ffa"
+      }
+    }
+  ],
+  "version" : 2
+}

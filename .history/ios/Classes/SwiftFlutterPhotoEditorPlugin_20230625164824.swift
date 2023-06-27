@@ -1,6 +1,6 @@
 import Flutter
 import UIKit
-import ZLImageEditor
+import github.com/heshesh2010/ZLImageEditor.git
 
 public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -28,8 +28,8 @@ public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
       }
 
       ZLImageEditorConfiguration.default()
-    .editImageTools([.draw .clip,.textSticker])
- 
+    .editImageTools([.draw])
+    .adjustTools([.brightness, .contrast, .saturation])
 
       ZLEditImageViewController.showEditImageVC(
         parentVC: UIApplication.shared.keyWindow?.rootViewController,

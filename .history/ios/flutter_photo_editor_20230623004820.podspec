@@ -2,6 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
 # Run `pod lib lint flutter_photo_editor.podspec` to validate before publishing.
 #
+source 'https://github.com/tl4app/ZLImageEditor.git'
 Pod::Spec.new do |s|
   s.name             = 'flutter_photo_editor'
   s.version          = '0.0.1'
