@@ -3,6 +3,7 @@ package com.vachel.editor.ui.widget;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -66,7 +67,9 @@ public class TextEditDialog extends Dialog implements View.OnClickListener,
         editGd.setColor(Color.TRANSPARENT);
         editGd.setCornerRadius(Utils.dip2px(getContext(), 10));
         mEditText.setBackground(editGd);
+        Typeface type = Typeface.createFromAsset(getContext().getAssets(),"fonts/IBMPlexSansArabic-Regular.ttf");
 
+        mEditText.setTypeface(type);
         findViewById(R.id.root_dialog).setOnTouchListener(this);
     }
 
