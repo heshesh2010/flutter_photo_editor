@@ -29,9 +29,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_photo_editor: 68c19bcfdddfbd00804cf835db837fe623d4c679
-  image_picker_ios: b786a5dcf033a8336a657191401bfdf12017dabb
+  image_picker_ios: 4a8aadfbb6dc30ad5141a2ce3832af9214a705b5
   ZLImageEditor: ee86f044fb7c5dec6b5de49eb7bb6fd42286f2ae
 
 PODFILE CHECKSUM: 7c54516ca8e3a817028f2bc66337f176f408dca3
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.13.0

@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import com.vachel.editor.PictureEditor;
 import com.vachel.editor.util.Utils;
-import com.wy.flutter_photo_editor.R;
+import com.wy.flutter_photo_editor.R;;
 import com.vachel.editor.bean.StickerText;
 
 public class TextEditDialog extends Dialog implements View.OnClickListener,
