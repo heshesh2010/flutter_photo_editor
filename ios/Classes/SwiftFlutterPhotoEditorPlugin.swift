@@ -27,7 +27,7 @@ public class SwiftFlutterPhotoEditorPlugin: NSObject, FlutterPlugin {
         return
       }
 
-      ZLImageEditorConfiguration.default()
+      ZLImageEditorConfiguration.fontChooserContainerView(FontChooserContainerView())
     .editImageTools([.draw, .clip, .textSticker])
  
 
