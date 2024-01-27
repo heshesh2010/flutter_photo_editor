@@ -47,12 +47,12 @@ public class EditUtils {
         float scale = Math.min(w / frame.width(), h / frame.height());
 
         // 缩放FIT
-        frame.set(0, 0, frame.width() * scale, 0);
+        frame.set(0, 0, frame.width() * scale, (frame.height() * scale)-10);
 
         // 中心对齐
         frame.offset(
                 win.centerX() + (paddingLeft - paddingRight) / 2 - frame.centerX(),
-                win.centerY() + (paddingTop - paddingBottom) / 2 - frame.centerY()
+                win.centerY() + (paddingTop - paddingBottom) / 3 - frame.centerY()
         );
     }
 

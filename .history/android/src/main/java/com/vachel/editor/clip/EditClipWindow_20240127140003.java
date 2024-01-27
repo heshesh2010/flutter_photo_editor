@@ -33,7 +33,7 @@ public class EditClipWindow {
     /**
      * 垂直窗口比例
      */
-    private static final float VERTICAL_RATIO = 8.0f;
+    private static final float VERTICAL_RATIO = 6.0f;
     private IClipRender mWindowRender;
 
     public EditClipWindow() {
@@ -82,7 +82,8 @@ public class EditClipWindow {
                     mBaseFrame.left + (mTargetFrame.left - mBaseFrame.left) * fraction,
                     mBaseFrame.top + (mTargetFrame.top - mBaseFrame.top) * fraction,
                     mBaseFrame.right + (mTargetFrame.right - mBaseFrame.right) * fraction,
-                    mBaseFrame.bottom + (mTargetFrame.bottom - mBaseFrame.bottom) * fraction);
+                    mBaseFrame.bottom + (mTargetFrame.bottom - mBaseFrame.bottom) * fraction
+            );
         }
     }
 
@@ -151,20 +152,19 @@ public class EditClipWindow {
         getRender().onDraw(canvas, mFrame);
     }
 
-    // public void onDrawShade(Canvas canvas) {
-    // if (!isShowShade) return;
-    //
-    // // 计算遮罩图形
-    // mShadePath.reset();
-    //
-    // mShadePath.setFillType(Path.FillType.WINDING);
-    // mShadePath.addRect(mFrame.left + 100, mFrame.top + 100, mFrame.right - 100,
-    // mFrame.bottom - 100, Path.Direction.CW);
-    //
-    // mPaint.setColor(COLOR_SHADE);
-    // mPaint.setStyle(Paint.Style.FILL);
-    // canvas.drawPath(mShadePath, mPaint);
-    // }
+//    public void onDrawShade(Canvas canvas) {
+//        if (!isShowShade) return;
+//
+//        // 计算遮罩图形
+//        mShadePath.reset();
+//
+//        mShadePath.setFillType(Path.FillType.WINDING);
+//        mShadePath.addRect(mFrame.left + 100, mFrame.top + 100, mFrame.right - 100, mFrame.bottom - 100, Path.Direction.CW);
+//
+//        mPaint.setColor(COLOR_SHADE);
+//        mPaint.setStyle(Paint.Style.FILL);
+//        canvas.drawPath(mShadePath, mPaint);
+//    }
 
     public Anchor getAnchor(float x, float y) {
         float cornerSize = getRender().getCornerSize();
@@ -172,7 +172,7 @@ public class EditClipWindow {
                 && !Anchor.isCohesionContains(mFrame, cornerSize, x, y)) {
             int v = 0;
             float[] cohesion = Anchor.cohesion(mFrame, 0);
-            float[] pos = { x, y };
+            float[] pos = {x, y};
             for (int i = 0; i < cohesion.length; i++) {
                 if (Math.abs(cohesion[i] - pos[i >> 1]) < cornerSize) {
                     v |= 1 << i;
