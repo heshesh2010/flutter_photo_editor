@@ -274,7 +274,7 @@ public class PictureEditActivity extends AppCompatActivity implements View.OnCli
         Uri uri = Uri.fromFile(file);
         return BitmapUtil.getBitmapFromUri(getApplicationContext(), uri,
                 Utils.getScreenWidth(this) / 2,
-                Utils.getScreenHeight(this) / 2);
+                Utils.getScreenHeight(this) / 4);
     }
 
     @Override
