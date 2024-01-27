@@ -33,7 +33,7 @@ public class EditClipWindow {
     /**
      * 垂直窗口比例
      */
-    private static final float VERTICAL_RATIO = 2.0f;
+    private static final float VERTICAL_RATIO = 4.0f;
     private IClipRender mWindowRender;
 
     public EditClipWindow() {
