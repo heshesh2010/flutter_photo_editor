@@ -44,7 +44,7 @@ public class EditClipWindow {
      */
     public void setClipWinSize(float width, float height) {
         mWin.set(0, 0, width, height);
-        mWinFrame.set(0, 0, width, 50 );
+        mWinFrame.set(0, 0, width, height * VERTICAL_RATIO);
 
         if (!mFrame.isEmpty()) {
             EditUtils.fitFrameCenter(mWinFrame, mFrame);
