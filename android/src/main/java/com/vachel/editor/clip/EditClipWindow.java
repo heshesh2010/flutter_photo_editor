@@ -72,7 +72,7 @@ public class EditClipWindow {
     public boolean onClipSteady() {
         mBaseFrame.set(mFrame);
         mTargetFrame.set(mFrame);
-        EditUtils.fitCenter(mWin, mTargetFrame, getRender().getClipMargin());
+        EditUtils.fitCenter(mWin, mTargetFrame, 0);
         return isEditAnimRunning = !mTargetFrame.equals(mBaseFrame);
     }
 
