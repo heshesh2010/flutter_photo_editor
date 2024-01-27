@@ -44,7 +44,7 @@ public class EditClipWindow {
      */
     public void setClipWinSize(float width, float height) {
         mWin.set(0, 0, width, height);
-        mWinFrame.set(0, 0, width, height * VERTICAL_RATIO);
+        mWinFrame.set(0, 0, width, 50 );
 
         if (!mFrame.isEmpty()) {
             EditUtils.fitFrameCenter(mWinFrame, mFrame);
@@ -72,7 +72,7 @@ public class EditClipWindow {
     public boolean onClipSteady() {
         mBaseFrame.set(mFrame);
         mTargetFrame.set(mFrame);
-        EditUtils.fitCenter(mWin, mTargetFrame, 0);
+        EditUtils.fitCenter(mWin, mTargetFrame, getRender().getClipMargin());
         return isEditAnimRunning = !mTargetFrame.equals(mBaseFrame);
     }
 
