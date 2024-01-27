@@ -47,7 +47,7 @@ public class EditUtils {
         float scale = Math.min(w / frame.width(), h / frame.height());
 
         // 缩放FIT
-        frame.set(0, 0, frame.width() * scale, frame.height() * scale);
+        frame.set(0, 0, frame.width() * scale, 0);
 
         // 中心对齐
         frame.offset(
